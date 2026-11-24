@@ -1,0 +1,19 @@
+# dependências e build
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# segredos — NUNCA commitar
+.env
+.env*.local
+
+# ferramentas
+.vercel
+supabase/.temp
+supabase/.branches
+
+# sistema
+.DS_Store
+npm-debug.log*
