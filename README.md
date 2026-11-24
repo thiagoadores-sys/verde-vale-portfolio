@@ -1,4 +1,4 @@
-# Verde Vale Orgânicos — projeto de portfólio
+# Verde Vale Orgânicos — projeto de portfólio 
 
 > **Projeto fictício.** Empresa, preços, depoimentos e números de vendas são inventados para demonstração.
 
