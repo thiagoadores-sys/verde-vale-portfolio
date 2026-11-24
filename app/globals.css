@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Identidade visual — Verde Vale (fictícia). Altere só aqui. */
+:root {
+  --cor-primaria: #2f6b3a;        /* verde folha — contraste 6,3:1 com branco */
+  --cor-primaria-escura: #234f2b;
+  --cor-secundaria: #e07a1f;      /* laranja abóbora — usar com texto escuro */
+  --cor-texto: #1b2b1e;
+  --cor-texto-suave: #4a5a4d;     /* 7:1 sobre o fundo */
+  --cor-fundo: #faf8f2;
+  --cor-suave: #eef3ea;
+  --cor-borda: #d6ddd0;
+  --fonte-titulo: var(--font-fraunces), Georgia, serif;
+  --fonte-texto: var(--font-inter), system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-marca: var(--cor-primaria);
+  --color-marca-escura: var(--cor-primaria-escura);
+  --color-destaque: var(--cor-secundaria);
+  --color-texto: var(--cor-texto);
+  --color-texto-suave: var(--cor-texto-suave);
+  --color-fundo: var(--cor-fundo);
+  --color-suave: var(--cor-suave);
+  --color-borda: var(--cor-borda);
+  --font-titulo: var(--fonte-titulo);
+  --font-sans: var(--fonte-texto);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  letter-spacing: -0.01em;
+}
+
+/* Foco sempre visível para quem navega pelo teclado */
+:focus-visible {
+  outline: 3px solid var(--cor-secundaria);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

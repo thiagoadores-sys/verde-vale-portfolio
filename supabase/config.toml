@@ -1,0 +1,22 @@
+# Configuração do Supabase local (CLI). Valores não listados usam o padrão.
+# Se preferir o arquivo completo, rode `supabase init --force` e reaplique estes ajustes.
+project_id = "verde-vale-portfolio"
+
+[api]
+schemas = ["public"]
+
+[db]
+major_version = 17
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[auth]
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/**"]
+# Contas criadas apenas pelo painel do Supabase (sem cadastro público)
+enable_signup = false
+
+[auth.email]
+enable_signup = false
